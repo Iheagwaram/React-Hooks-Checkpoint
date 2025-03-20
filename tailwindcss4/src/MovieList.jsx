@@ -3,9 +3,9 @@ import MovieCard from "./MovieCard";
 
 const MovieList = ({ movies }) => {
   return (
-    <div className="grid grid-cols-2 gap-4">
-      {movies.map((movie, index) => (
-        <MovieCard key={index} movie={movie} />
+    <div className="grid grid-cols-3 gap-4">
+      {movies.map((movie) => (
+        <MovieCard key={movie.id} movie={movie} />
       ))}
     </div>
   );
